@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Figtree;
+  background-color: var(--Yellow);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--White);
+  border-radius: 15px;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 5);
+  max-width: 300px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--Gray-950);
+}
+
+.illustration {
+  display: flex;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.learnings {
+  background-color: var(--Yellow);
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 5px 13px;
+  color: var(--Gray-950);
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+.date {
+  color: var(--Gray-950);
+  font-size: 11.5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.title {
+  color: var(--Gray-950);
+  font-size: 1.22em;
+  margin-top: 10px;
+  font-weight: 1000;
+}
+
+.title:hover {
+  color: var(--Yellow);
+  cursor: pointer;
+}
+
+.description {
+  color: var(--Gray-500);
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 135%;
+  font-weight: 500;
+}
+
+.avatar {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.author-info {
+  display: flex;
+  color: var(--Gray-950);
+  font-size: 11px;
+  margin-top: 15px;
+  font-weight: 1000;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--Gray-950);
+  margin-top: 10px;
+  font-family: Figtree;
+}
+
+.attribution a { 
+  color: var(--White); 
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--Gray-500);
+}
