@@ -14,8 +14,10 @@
 }
 
 body {
+  transform: scale(1.25); 
   font-family: Figtree;
   background-color: var(--Yellow);
+  overflow: hidden;
 }
 
 .container {
